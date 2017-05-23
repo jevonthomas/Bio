@@ -1,5 +1,11 @@
 body {
 	font-family: helvetica, arial, sans-serif;
+	margin: 0;
+}
+
+.main {
+	margin: 0 auto;
+	max-width: 80%;
 }
 
 li {
@@ -10,6 +16,136 @@ a {
 	text-decoration: none;
 }
 
-nav li {
+a:visited {
+	color: #91bed4;
+}
+
+a:hover {
+	color: #f26101;
+}
+
+/*********************
+NAV BAR
+**********************/
+
+#top {
+	background-color: #304269;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li a {
 	display: block;
+	margin: 0 auto;
+	padding: 10px 0;
+	text-align: center;
+}
+
+nav li a:hover {
+	background-color: #91bed4;
+}
+
+nav li a:visited {
+	color: #d9e8f5;
+}
+
+
+
+/*********************
+Main Article
+**********************/
+
+
+.main h1 {
+	color: #304269;
+	text-align: center;
+}
+
+header h1{
+	margin: 0;
+	padding: 5px 0 0 20px;
+}
+
+.job_title {
+	color: #f26101;
+	text-align: center;
+}
+
+section {
+	margin: 5px 0;
+	padding: 5px 0;
+}
+
+section  p {
+	font-family: "times new roman", serif;
+}
+
+section p:nth-child(2) {
+	font-style: italic;
+	text-align: center;
+}
+
+date {
+	font-family: "times new roman", serif;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+section p:nth-child(5) {
+	padding-top: 5px;
+	margin-top: 0;
+}
+
+
+
+
+/*********************
+Contacts
+**********************/
+
+.contact {
+	margin-top: 10px;
+	padding-top: 10px;
+	font-family: "times new roman", serif;
+	text-align: center;
+}
+
+
+/*********************
+Media Queries
+**********************/
+
+
+@media (min-width: 700px) {
+	
+	nav ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	}
+
+	nav li {
+		display: inline-block;
+	}
+
+	nav li a {
+		padding: 14px 16px;
+	}
+
+	.job_title {
+	text-align: left;
+	}
+
+	section p:nth-child(2) {
+	text-align: left;
+	}
+
+	.contact {
+		text-align: left;
+	}
 }
